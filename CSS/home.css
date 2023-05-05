@@ -1,0 +1,95 @@
+:root {
+  --mainColor: rgb(21, 30, 31);
+  --mainColorOpacity: rgba(15, 24, 25, 0.75);
+  --linkColor: rgb(233, 65, 51);
+  --inputColor: rgb(56, 182, 255);
+  --linkColorHover: rgb(200, 45, 41);
+  --darkColor: rgb(0, 0, 0);
+  --darkAlphaColor: rgba(0, 0, 0, 0.6);
+  --boxColor: rgb(15, 24, 25);
+  --ligthColor: rgb(255, 255, 255);
+  --img: url("../IMG/902988.jpg");
+}
+html {
+  font-size: 16px;
+  color: var(--ligthColor);
+}
+body {
+  background-color: var(--mainColor);
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: var(--img);
+  background-attachment: fixed;
+}
+.opacity {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--darkAlphaColor);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.title .h1 {
+  font-family: "Bungee Outline", cursiva;
+  font-size: 5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.7);
+  margin: 0% auto;
+  display: inline;
+}
+.logo {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 27rem;
+  height: auto;
+}
+.btn {
+  width: 100%;
+  max-width: 1200px;
+  height: 4rem;
+  margin-top: 4.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn button {
+  width: 10rem;
+  height: 2.8rem;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px 0px 15px 20px;
+  background-color: rgb(255, 0, 0);
+  color: var(--ligthColor);
+  box-shadow: 0.1em 0.1em var(--ligthColor);
+}
+.btn button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em var(--ligthColor);
+}
+.btn button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em var(--ligthColor);
+}
+.btn .Desc {
+  font-size: 1.5rem;
+  font-family: "Bungee Outline", cursiva;
+  text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.7);
+}
+hr {
+  width: 100%;
+  max-width: 1200px;
+  border: 1px solid rgb(255, 0, 0);
+}
