@@ -1,11 +1,11 @@
 :root {
-  --mainColor: rgb(15, 24, 25);
+  --mainColor: rgb(21, 30, 31);
   --mainColorOpacity: rgba(15, 24, 25, 0.75);
   --linkColor: rgb(233, 65, 51);
   --inputColor: rgb(56, 182, 255);
   --linkColorHover: rgb(200, 45, 41);
   --darkColor: rgb(0, 0, 0);
-  --boxColor: rgb(36, 36, 36);
+  --boxColor: rgb(15, 24, 25);
   --ligthColor: rgb(255, 255, 255);
 }
 html {
@@ -15,6 +15,13 @@ html {
 body {
   background-color: var(--mainColor);
 }
+/* Estilos utilizables */
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Estilos de la pag */
 .header {
   width: 100%;
   height: 10rem;
@@ -34,4 +41,88 @@ body {
 .header img:active {
   transform: translate(0%, 0%);
   box-shadow: none;
+}
+.section-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  background-color: var(--boxColor);
+  padding: 40px 0;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width: 400px;
+}
+form .group {
+  position: relative;
+  margin: 45px;
+}
+.form {
+  width: 100%;
+  margin: auto;
+}
+.form h1 {
+  text-align: center;
+  font-weight: 400;
+}
+.group input {
+  background: none;
+  color: rgba(56, 182, 255, 0.65);
+  padding: 0.62rem 0.62rem 0.62rem 0.31rem;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--inputColor);
+}
+.group input:focus {
+  outline: none;
+  color: var(--inputColor);
+}
+.group label {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+  transition: 0.45s ease-in-out all;
+  pointer-events: none;
+}
+
+.group input:focus ~ label,
+input:valid ~ label {
+  top: -13px;
+  font-size: 0.9rem;
+  color: var(--inputColor);
+}
+button {
+  display: block;
+  margin: 10px auto;
+  width: 60%;
+  background: var(--inputColor);
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: none;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em var(--ligthColor);
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em var(--ligthColor);
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em var(--ligthColor);
+}
+.link {
+  color: #777;
+  margin: 10px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out all;
+}
+.link:hover {
+  color: var(--inputColor);
 }
