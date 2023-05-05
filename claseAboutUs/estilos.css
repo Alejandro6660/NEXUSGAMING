@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+body {
+    background: url(/IMG/902988.jpg); 
+}
+
+nav {
+    background-color: black; 
+    height: 80px;
+}
+
+h1 {
+    padding: 20px;
+    color: white;
+}
+.navbar-items {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-items li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 26px;
+    color: white;
+}
+
+#logo {
+    margin: 15%; /** Considero que esta propiedad quizá no sea la mejor para alinear esta imagen al centro **/
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+.left {
+    
+}
+
+.text {
+    border: 1px solid white; 
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    background-color: white;
+}
+
+footer {
+    background-color: black;
+}
