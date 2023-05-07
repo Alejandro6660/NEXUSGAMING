@@ -1,23 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    
+}
 
+#press {
+    font-family: 'Press Start 2P', cursive;
+    color: orange;
 }
 
 body {
     background: url(/IMG/902988.jpg); 
 }
 
-nav {
+.navbar {
     background-color: black; 
     height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     padding: 20px;
     color: white;
 }
+
 .navbar-items {
     list-style: none;
     display: flex;
@@ -25,9 +34,10 @@ h1 {
 
 .navbar-items li {
     display: inline-block;
-    margin-right: 10px;
+    margin: 0 10px;
     font-size: 26px;
     color: white;
+
 }
 
 #logo {
@@ -38,10 +48,6 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
  }
-
-.left {
-    
-}
 
 .text {
     border: 1px solid white; 
